@@ -1,8 +1,8 @@
 // Footer.jsx
 function Footer() {
   return (
-    <footer>
-      <p>Bernardo A Santos Santos © all rights reserved 2025</p>
+    <footer className="bg-gray-800 text-white text-center py-4">
+      <p>© 2025 Bernardo A Santos Santos</p>
     </footer>
   );
 }
