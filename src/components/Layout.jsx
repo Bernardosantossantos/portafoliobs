@@ -4,11 +4,11 @@ import Footer from './Footer';
 function Layout({ children }) {
   return (
     <>
-      <Navbar className="" />
-      <main className="w-screen min-h-screen">
+      <Navbar className="container mx-auto" />
+      <main className="">
         {children}
       </main>
-      <Footer />
+      <Footer className="container mx-auto"/>
     </>
   );
 }
