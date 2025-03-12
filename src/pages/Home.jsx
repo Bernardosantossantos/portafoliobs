@@ -60,7 +60,7 @@ function Home() {
         {/* Imagen a la izquierda */}
         <div className="md:w-1/2 flex justify-center m-2 md:mb-0">
           <img
-            src="/src/assets/bernardo.jpg"  // Reemplaza con la ruta de tu imagen
+            src="/src/assets/bernardo-santos.png"  // Reemplaza con la ruta de tu imagen
             alt="Foto de Bernardo"
             className="w-64 h-64 object-cover rounded-full shadow-lg"
           />
@@ -111,26 +111,31 @@ function Home() {
               Sobre Mí
             </h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Soy Ingeniero en Sistemas Computacionales y me apasiona
-              crear soluciones innovadoras que mejoren la vida de las personas.
-              Me encanta aprender nuevas tecnologías, colaborar con equipos
-              multidisciplinarios y superar constantemente mis límites.
+              Soy Ingeniero en Sistemas Computacionales y me apasiona crear soluciones innovadoras que mejoren la vida de las personas. Me encanta aprender nuevas tecnologías y colaborar con equipos multidisciplinarios.
             </p>
             <p className="text-gray-700 leading-relaxed mb-6">
-              En mi tiempo libre disfruto explorar temas de Inteligencia Artificial,
-              desarrollar proyectos personales y escribir artículos técnicos en mi blog.
+              En mi tiempo libre disfruto explorar temas de Inteligencia Artificial, cloud computing, desarrollar proyectos personales y escribir artículos técnicos en mi LinkedIn y blog.
             </p>
-            <ul className="list-disc list-inside text-gray-700">
-              <li>Graduado con honores en XYZ</li>
-              <li>Experiencia en desarrollo Full-Stack (MERN, .NET)</li>
+            <ul className="list-disc list-inside text-gray-700 mb-6">
+              <li>Graduado de Ingeniero en Sistemas Computacionales en la (UCSD)</li>
+              <li>Experiencia en desarrollo Full-Stack</li>
               <li>Apasionado por la educación tecnológica y el mentoring</li>
             </ul>
+            
+            {/* Botón de descarga CV */}
+            <a
+              href="/src/assets/cv-bernardo-santos.pdf" // Asegúrate de colocar la ruta correcta de tu CV
+              download="CV-Bernardo-Santos.pdf"
+              className="inline-blockbg-transparent border border-blue-600 hover:bg-blue-600 hover:text-white text-blue-600 font-semibold py-2 px-4 rounded shadow transition-colors"
+            >
+              Descargar CV
+            </a>
           </div>
 
           {/* Imagen (derecha) */}
           <div className="flex justify-center md:justify-end">
             <img
-              src="/src/assets/bernardo.jpg"
+              src="/src/assets/bernardo-santos.png"
               alt="Bernardo trabajando en un proyecto"
               className="rounded-lg shadow-lg max-w-sm"
             />
@@ -211,15 +216,62 @@ function Home() {
         </div>
       </section>
 
-      <section id="contact" className="py-16 px-4 bg-white">
-        {/* Contacto */}
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8">Contáctame</h2>
-          {/* Aquí irá tu formulario de contacto */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Mis Proyectos</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            {/* Proyecto 1 */}
+            <div className="border rounded-lg overflow-hidden shadow-lg">
+              <img
+                src="/src/assets/project1.jpg" // Reemplaza con la ruta de la imagen de tu proyecto
+                alt="Proyecto 1"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-4">
+                <h3 className="text-xl font-semibold mb-2">Proyecto 1</h3>
+                <p className="text-gray-600">
+                  Descripción breve del proyecto.
+                </p>
+              </div>
+            </div>
+            {/* Proyecto 2 */}
+            <div className="border rounded-lg overflow-hidden shadow-lg">
+              <img
+                src="/src/assets/project2.jpg" // Reemplaza con la ruta de la imagen de tu proyecto
+                alt="Proyecto 2"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-4">
+                <h3 className="text-xl font-semibold mb-2">Proyecto 2</h3>
+                <p className="text-gray-600">
+                  Descripción breve del proyecto.
+                </p>
+              </div>
+            </div>
+            {/* Proyecto 3 */}
+            <div className="border rounded-lg overflow-hidden shadow-lg">
+              <img
+                src="/src/assets/project3.jpg" // Reemplaza con la ruta de la imagen de tu proyecto
+                alt="Proyecto 3"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-4">
+                <h3 className="text-xl font-semibold mb-2">Proyecto 3</h3>
+                <p className="text-gray-600">
+                  Descripción breve del proyecto.
+                </p>
+              </div>
+            </div>
+            {/* Agrega más tarjetas de proyecto según lo requieras */}
+          </div>
         </div>
       </section>
     </>
   );
 }
+
+
+
+
 
 export default Home;
