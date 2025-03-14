@@ -18,8 +18,10 @@ import {
 } from 'react-icons/si';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import { Link } from 'react-router-dom';
 
+import "slick-carousel/slick/slick-theme.css";
+import Trabajos from '../components/Trabajos';  // Asegúrate de usar la ruta correcta
 // Home.jsx
 function Home() {
   const sliderSettings = {
@@ -121,7 +123,7 @@ function Home() {
               <li>Experiencia en desarrollo Full-Stack</li>
               <li>Apasionado por la educación tecnológica y el mentoring</li>
             </ul>
-            
+
             {/* Botón de descarga CV */}
             <a
               href="/src/assets/cv-bernardo-santos.pdf" // Asegúrate de colocar la ruta correcta de tu CV
@@ -216,6 +218,9 @@ function Home() {
         </div>
       </section>
 
+      {/* Trabajos */}
+      <Trabajos />
+      
       <section className="py-16 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Mis Proyectos</h2>
@@ -269,9 +274,5 @@ function Home() {
     </>
   );
 }
-
-
-
-
 
 export default Home;
