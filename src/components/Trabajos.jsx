@@ -8,24 +8,24 @@ function Trabajos() {
       fecha: "2025 - Actualmente",
       tipoEtiqueta: "Contribución",
       colorEtiqueta: "bg-purple-600",
-      url: "https://link-sofi-dev.com",
-      descripcion: `Levanté los requerimientos del cliente para el desarrollo de la plataforma web de registro de personal, valido los cambios solicitados por el cliente con los entregados por el desarrollador, realico pruebas de funcionalidad y de integración, y documento los cambios realizados.`
-    },
-    {
-      titulo: "Concurso de Oposición Monitores (Minerd)",
-      fecha: "2023 - 2024",
-      tipoEtiqueta: "Contribución",
-      colorEtiqueta: "bg-purple-600",
-      url: "https://portfolio-cesar.com",
-      descripcion: `Colaboré con el desarrollo de la plataforma web del concurso de oposición de monitores, en la actualización de la interfaz de registro de los usuarios, validación de documentos, validación de los cambios de los demás desarrolladores tanto de código como de base de datos y documentación de los cambios realizados. Además, coordiné con el equipo de seguridad y base de datos para los pases a producción de los cambios realizados en el sistema. También validé los cambios solicitados por el cliente y realicé pruebas de funcionalidad e integración.`
+      url: "https://apps.minerd.gob.do/controlacademicocentros/",
+      descripcion: `Levanté los requisitos del cliente para el desarrollo de la plataforma web de registro de personal. Asimismo, validé los cambios solicitados frente a los entregados por el desarrollador, realicé pruebas de funcionalidad e integración y documenté todos los ajustes realizados. Finalmente, elaboré toda la documentación para el cliente, así como los manuales de usuario.`
     },
     {
       titulo: "Concurso de Oposición Docente (Minerd)",
+      fecha: "2023 - 2024",
+      tipoEtiqueta: "Contribución",
+      colorEtiqueta: "bg-purple-600",
+      url: "https://apps1.minerd.gob.do/seconcursofocalizado2024/Login/IniciarSesion?ReturnUrl=%2fseconcursofocalizado2024%2f",
+      descripcion: `Contribuí a la actualización del sistema web del concurso de oposición docente, mejorando las interfaces de inicio de sesión y registro de usuarios. También validé los cambios de otros desarrolladores tanto de código como de base de datos y documenté cada modificación. Asimismo, coordiné con los equipos de seguridad y base de datos para llevar a producción los cambios realizados en el sistema. Además, realicé pruebas de funcionalidad e integración y validé los ajustes solicitados por el cliente.`
+    },
+    {
+      titulo: "Concurso de Oposición Monitores (Minerd)",
       fecha: "2022 - 2023",
       tipoEtiqueta: "Contribución",
       colorEtiqueta: "bg-purple-600",
-      url: "https://blog-sofi-dev.com",
-      descripcion: `Contribuí en la actualización del Sistema web del concurso de oposición docente, en la actualización de las interfaces del login y el registro de los usuarios, validé los cambios de los demás desarrolladores tanto de código como de base de datos y documenté los cambios. También coordiné con el equipo de seguridad y base de datos para los pases a producción de los cambios realizados en el sistema.`
+      url: "https://apps.minerd.gob.do/semonitoresdocentes/Login/IniciarSesion?ReturnUrl=%2fsemonitoresdocentes",
+      descripcion: `Colaboré en el desarrollo de la plataforma web para el concurso de oposición de monitores, actualizando la interfaz de registro de usuarios y validando documentos. También supervisé los cambios de otros desarrolladores tanto de código como de base de datos y documenté las modificaciones realizadas. Además, coordiné con los equipos de seguridad y base de datos para la puesta en producción de dichas actualizaciones. Asimismo, validé los ajustes solicitados por el cliente y realicé pruebas de funcionalidad e integración.`
     },
     {
       titulo: "Data Center del Estado Dominicano (OGTIC)",
@@ -33,14 +33,14 @@ function Trabajos() {
       tipoEtiqueta: "Contribución",
       colorEtiqueta: "bg-purple-600",
       url: "https://blog-sofi-dev.com",
-      descripcion: `Contribuí en la migración y actualización de Joomla y WordPress de aproximadamente 500 portales del estado dominicano tanto a nivel de aplicación como de base de datos, aplicándoles seguridad con Cloudflare y otras herramientas. También brindé servicio de instalación, configuración y soporte de infraestructura TIC y servicio de correo a las instituciones del estado dominicano.`
+      descripcion: `Contribuí en la migración y actualización de aproximadamente 500 portales web del Estado dominicano, tanto a nivel de aplicación (Joomla y WordPress) como de base de datos, implementando medidas de seguridad con Cloudflare y otras herramientas para garantizar la integridad de la información. Asimismo, brindé servicios de instalación, configuración y soporte de infraestructura TIC, así como servicio de correo electrónico, para diversas instituciones del Estado, entre otras funciones.`
     },
   ];
 
   return (
-    <section className="py-16 px-4 bg-gray-900 text-white">
-      <div className="max-w-5xl mx-auto">
-        <h2 className="text-6xl mb-8 font-serif text-center tracking-wide">
+    <section id='trabajos' className="py-16 px-4 bg-gray-900 text-white">
+      <div className="max-w-6xl container mx-auto px-4">
+        <h2 className="text-4xl mb-8 font-serif text-center tracking-wide">
           Trabajos
         </h2>
 

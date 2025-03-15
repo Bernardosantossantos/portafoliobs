@@ -57,56 +57,58 @@ function Home() {
   return (
     <>
       {/* HERO SECTION */}
-      <section className="min-h-screen flex flex-col md:flex-row items-center justify-center px-4 bg-gradient-to-br from-gray-900 via-gray-800 to-blue-900">
+      <section className=" bg-gradient-to-br from-gray-900 via-gray-800 to-blue-900">
+        <div className='container mx-auto px-4 min-h-screen py-2 flex flex-col md:flex-row items-center justify-center "'>
 
-        {/* Imagen a la izquierda */}
-        <div className="md:w-1/2 flex justify-center m-2 md:mb-0">
-          <img
-            src="/src/assets/bernardo-santos.png"  // Reemplaza con la ruta de tu imagen
-            alt="Foto de Bernardo"
-            className="w-64 h-64 object-cover rounded-full shadow-lg"
-          />
-        </div>
+          {/* Imagen a la izquierda */}
+          <div className="md:w-1/2 flex justify-center m-2 md:mb-0">
+            <img
+              src="/src/assets/bernardo-santos.png"  // Reemplaza con la ruta de tu imagen
+              alt="Foto de Bernardo"
+              className="w-64 h-64 object-cover rounded-full shadow-lg"
+            />
+          </div>
 
-        {/* Contenido a la derecha */}
-        <div className="md:w-1/2 text-center md:text-left space-y-4">
-          <h1 className="text-2xl text-gray-300">
-            ¡Hola! Soy <span className="font-bold">Bernardo A. Santos</span> 👋
-          </h1>
+          {/* Contenido a la derecha */}
+          <div className="md:w-1/2 text-center md:text-left space-y-4">
+            <h1 className="text-2xl text-gray-300">
+              ¡Hola! Soy <span className="font-bold">Bernardo A. Santos</span> 👋
+            </h1>
 
-          <p className="text-4xl font-bold text-white">
-            Full-Stack Web Developer
-          </p>
+            <p className="text-4xl font-bold text-white">
+              Full-Stack Web Developer
+            </p>
 
-          <p className="text-xl text-gray-300 max-w-2xl">
-            Transformando ideas en experiencias digitales excepcionales.
-            <br />
-            <span className="inline-block mt-2 font-semibold text-yellow-400">
-              Disponible para trabajar
-            </span>
-          </p>
+            <p className="text-xl text-gray-300 max-w-2xl">
+              Transformando ideas en experiencias digitales excepcionales.
+              <br />
+              <span className="inline-block mt-2 font-semibold text-yellow-400">
+                Disponible para trabajar
+              </span>
+            </p>
 
-          {/* CTA Buttons */}
-          <div className="mt-4 flex flex-col md:flex-row gap-4 justify-center md:justify-start">
-            <a
-              href="#contact"
-              className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded shadow transition-colors"
-            >
-              Contáctame
-            </a>
-            <a
-              href="#projects"
-              className="bg-transparent border border-blue-600 hover:bg-blue-600 hover:text-white text-blue-600 font-semibold py-2 px-4 rounded transition-colors"
-            >
-              Ver proyectos
-            </a>
+            {/* CTA Buttons */}
+            <div className="mt-4 flex flex-col md:flex-row gap-4 justify-center md:justify-start">
+              <a
+                href="#contact"
+                className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded shadow transition-colors"
+              >
+                Contáctame
+              </a>
+              <a
+                href="#projects"
+                className="bg-transparent border border-blue-600 hover:bg-blue-600 hover:text-white text-blue-600 font-semibold py-2 px-4 rounded transition-colors"
+              >
+                Ver proyectos
+              </a>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Sobre mi */}
-      <section className="py-16 px-4 bg-gray-100">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <section id="sobre-mi" className="py-16 px-4 bg-gray-100">
+        <div className="container mx-auto px-4 max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Texto (izquierda) */}
           <div>
             <h2 className="text-3xl font-bold text-gray-800 mb-4">
@@ -119,8 +121,7 @@ function Home() {
               En mi tiempo libre disfruto explorar temas de Inteligencia Artificial, cloud computing, desarrollar proyectos personales y escribir artículos técnicos en mi LinkedIn y blog.
             </p>
             <ul className="list-disc list-inside text-gray-700 mb-6">
-              <li>Graduado de Ingeniero en Sistemas Computacionales en la (UCSD)</li>
-              <li>Experiencia en desarrollo Full-Stack</li>
+              <li>Desarrollador Full-Stack</li>
               <li>Apasionado por la educación tecnológica y el mentoring</li>
             </ul>
 
@@ -139,14 +140,14 @@ function Home() {
             <img
               src="/src/assets/bernardo-santos.png"
               alt="Bernardo trabajando en un proyecto"
-              className="rounded-lg shadow-lg max-w-sm"
+              className="rounded-lg shadow-lg w-full md:w-96"
             />
           </div>
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-white">
-        <div className="max-w-6xl mx-auto">
+      <section id='Habilidades & Tecnologías' className="py-16 bg-white">
+        <div className="max-w-6xl container mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-800 mb-10 text-center">
             Habilidades & Tecnologías
           </h2>
@@ -220,10 +221,10 @@ function Home() {
 
       {/* Trabajos */}
       <Trabajos />
-      
-      <section className="py-16 px-4 bg-white">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Mis Proyectos</h2>
+
+      <section id='proyectos' className="py-16 px-4 bg-white">
+        <div className="max-w-6xl container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Mis Proyectos Personales</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             {/* Proyecto 1 */}
             <div className="border rounded-lg overflow-hidden shadow-lg">
