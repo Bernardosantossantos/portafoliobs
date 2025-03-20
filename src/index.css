@@ -31,6 +31,15 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  padding-top: 0;
+  transition: padding-top 0.3s;
+}
+
+body.navbar-fixed {
+  padding-top: 64px; /* Ajusta este valor según la altura de tu navbar */
+}
+
 
 
 

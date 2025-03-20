@@ -1,7 +1,23 @@
 // Navbar.jsx
 import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 
 function Navbar() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -10,7 +26,12 @@ function Navbar() {
   };
 
   return (
-    <header className="bg-gray-800">
+    <header className={`${
+      isScrolled 
+        ? 'fixed top-0 left-0 right-0 bg-gray-800/95 backdrop-blur-sm shadow-lg' 
+        : 'bg-gray-800'
+      } transition-all duration-300 z-50`}
+    >
       <nav className="container mx-auto px-4 flex flex-col sm:flex-row justify-between items-center py-4">
         <div className="flex flex-col items-center sm:flex-row sm:space-x-4">
           <span>

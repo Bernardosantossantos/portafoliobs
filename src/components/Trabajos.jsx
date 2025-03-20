@@ -9,7 +9,12 @@ function Trabajos() {
       tipoEtiqueta: "Contribución",
       colorEtiqueta: "bg-purple-600",
       url: "https://apps.minerd.gob.do/controlacademicocentros/",
-      descripcion: `Levanté los requisitos del cliente para el desarrollo de la plataforma web de registro de personal. Asimismo, validé los cambios solicitados frente a los entregados por el desarrollador, realicé pruebas de funcionalidad e integración y documenté todos los ajustes realizados. Finalmente, elaboré toda la documentación para el cliente, así como los manuales de usuario.`
+      descripcion: ` Contribuí en el levantamiento de los requisitos del cliente para el desarrollo de
+ la plataforma web de registro de personal. Asimismo, validé los cambios
+ solicitados frente a los entregados por el desarrollador, realicé pruebas de
+ funcionalidad e integración y documenté todos los ajustes realizados.
+ Finalmente, elaboré toda la documentación para el cliente, así como los
+ manuales de usuario.`
     },
     {
       titulo: "Concurso de Oposición Docente (Minerd)",
@@ -38,7 +43,7 @@ function Trabajos() {
   ];
 
   return (
-    <section id='trabajos' className="py-16 px-4 bg-gray-900 text-white">
+    <section id='trabajos' className="py-24 px-4 bg-gray-900 text-white">
       <div className="max-w-6xl container mx-auto px-4">
         <h2 className="text-4xl mb-8 font-serif text-center tracking-wide">
           Trabajos

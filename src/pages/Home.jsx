@@ -57,7 +57,7 @@ function Home() {
   return (
     <>
       {/* HERO SECTION */}
-      <section className=" bg-gradient-to-br from-gray-900 via-gray-800 to-blue-900">
+      <section id='hero' className=" bg-gradient-to-br from-gray-900 via-gray-800 to-blue-900">
         <div className='container mx-auto px-4 min-h-screen py-2 flex flex-col md:flex-row items-center justify-center "'>
 
           {/* Imagen a la izquierda */}
@@ -72,7 +72,7 @@ function Home() {
           {/* Contenido a la derecha */}
           <div className="md:w-1/2 text-center md:text-left space-y-4">
             <h1 className="text-2xl text-gray-300">
-              ¡Hola! Soy <span className="font-bold">Bernardo A. Santos</span> 👋
+              ¡Hola! Soy <span className="font-bold">Bernardo Santos</span> 👋
             </h1>
 
             <p className="text-4xl font-bold text-white">
@@ -107,7 +107,7 @@ function Home() {
       </section>
 
       {/* Sobre mi */}
-      <section id="sobre-mi" className="py-16 px-4 bg-gray-100">
+      <section id="sobre-mi" className="py-24 px-4 bg-gray-100">
         <div className="container mx-auto px-4 max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Texto (izquierda) */}
           <div>
@@ -115,7 +115,7 @@ function Home() {
               Sobre Mí
             </h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Soy Ingeniero en Sistemas Computacionales y me apasiona crear soluciones innovadoras que mejoren la vida de las personas. Me encanta aprender nuevas tecnologías y colaborar con equipos multidisciplinarios.
+              Me llamo Bernardo Aneudy Santos Santos, aunque la mayoría me conoce como Aneudy o Neo. Me inicié en la programación durante mis años universitarios, cuando desarrollé un módulo de facturación en C# Windows Forms. A pesar de que algunos compañeros dudaron inicialmente de mis capacidades, con el tiempo demostré lo contrario. He contribuido y liderado proyectos que han tenido un impacto significativo en la población dominicana. Creo firmemente en el poder de la tecnología para transformar vidas y me dedico a impulsar cambios positivos a través del desarrollo de software.
             </p>
             <p className="text-gray-700 leading-relaxed mb-6">
               En mi tiempo libre disfruto explorar temas de Inteligencia Artificial, cloud computing, desarrollar proyectos personales y escribir artículos técnicos en mi LinkedIn y blog.
@@ -146,7 +146,7 @@ function Home() {
         </div>
       </section>
 
-      <section id='Habilidades & Tecnologías' className="py-16 bg-white">
+      <section id='Habilidades & Tecnologías' className="py-24 bg-white">
         <div className="max-w-6xl container mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-800 mb-10 text-center">
             Habilidades & Tecnologías
@@ -222,9 +222,9 @@ function Home() {
       {/* Trabajos */}
       <Trabajos />
 
-      <section id='proyectos' className="py-16 px-4 bg-white">
+      <section id='proyectos' className="py-24 px-4 bg-white">
         <div className="max-w-6xl container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Mis Proyectos Personales</h2>
+          <h2 className="text-3xl font-bold text-gray-800 mb-16 text-center">Mis Proyectos Personales</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             {/* Proyecto 1 */}
             <div className="border rounded-lg overflow-hidden shadow-lg">
