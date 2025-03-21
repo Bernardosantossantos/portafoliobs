@@ -37,7 +37,7 @@ function Trabajos() {
       fecha: "2020 - 2022",
       tipoEtiqueta: "Contribución",
       colorEtiqueta: "bg-purple-600",
-      url: "https://blog-sofi-dev.com",
+      url: "https://ogtic.gob.do/data-center",
       descripcion: `Contribuí en la migración y actualización de aproximadamente 500 portales web del Estado dominicano, tanto a nivel de aplicación (Joomla y WordPress) como de base de datos, implementando medidas de seguridad con Cloudflare y otras herramientas para garantizar la integridad de la información. Asimismo, brindé servicios de instalación, configuración y soporte de infraestructura TIC, así como servicio de correo electrónico, para diversas instituciones del Estado, entre otras funciones.`
     },
   ];

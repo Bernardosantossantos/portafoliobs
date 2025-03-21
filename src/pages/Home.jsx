@@ -90,13 +90,13 @@ function Home() {
             {/* CTA Buttons */}
             <div className="mt-4 flex flex-col md:flex-row gap-4 justify-center md:justify-start">
               <a
-                href="#contact"
+                href="mailto:"
                 className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded shadow transition-colors"
               >
                 Contáctame
               </a>
               <a
-                href="#projects"
+                href="#proyectos"
                 className="bg-transparent border border-blue-600 hover:bg-blue-600 hover:text-white text-blue-600 font-semibold py-2 px-4 rounded transition-colors"
               >
                 Ver proyectos

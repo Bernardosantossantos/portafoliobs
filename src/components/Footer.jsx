@@ -7,7 +7,7 @@ function Footer() {
         <div className="flex justify-between items-center flex-wrap gap-4">
           {/* Copyright */}
           <p className="text-gray-400">
-            © {new Date().getFullYear()} Bernardo A Santos Santos. All rights reserved.
+            © {new Date().getFullYear()} Bernardo A Santos Santos.
           </p>
 
           {/* Social Media Links */}
@@ -16,7 +16,7 @@ function Footer() {
             Sigueme
           </p>
             <a
-              href="https://linkedin.com/in/your-linkedin"
+              href="https://www.linkedin.com/in/bernardosantossa/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-blue-400 transition-colors flex items-center gap-2"
@@ -25,7 +25,7 @@ function Footer() {
               <span>LinkedIn</span>
             </a>
             <a
-              href="https://github.com/your-github"
+              href="https://github.com/Bernardosantossantos"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-gray-400 transition-colors flex items-center gap-2"
