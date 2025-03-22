@@ -37,43 +37,52 @@ function Navbar() {
           <span>
             <button
               onClick={() => scrollToSection('hero')}
-              className="text-white text-lg mb-2 sm:mb-0 bg-transparent border-none cursor-pointer"
+              className="text-white text-lg mb-2 sm:mb-0 bg-transparent border-none cursor-pointer hover:text-blue-400 focus:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-gray-800 rounded-sm transition-colors duration-200"
+              aria-label="Ir al inicio"
             >
               Bernardo dev
             </button>
           </span>
         </div>
         <ul className="flex flex-row space-x-4 sm:flex-row space-y-1 sm:space-y-0 sm:space-x-4 mt-3 sm:mt-0">
-          <li>
+          <li className="relative group">
             <button
               onClick={() => scrollToSection('sobre-mi')}
-              className="text-white bg-transparent border-none cursor-pointer"
+              className="text-white bg-transparent border-none cursor-pointer hover:text-blue-400 focus:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-gray-800 rounded-sm p-2 transition-colors duration-200"
+              aria-label="Ir a sección Sobre mí"
             >
               Sobre mi
+              <span className="absolute inset-x-0 -bottom-1 h-0.5 bg-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200"></span>
             </button>
           </li>
-          <li>
+          <li className="relative group">
             <button
               onClick={() => scrollToSection('Habilidades & Tecnologías')}
-              className="text-white bg-transparent border-none cursor-pointer"
+              className="text-white bg-transparent border-none cursor-pointer hover:text-blue-400 focus:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-gray-800 rounded-sm p-2 transition-colors duration-200"
+              aria-label="Ir a sección Habilidades"
             >
               Habilidades
+              <span className="absolute inset-x-0 -bottom-1 h-0.5 bg-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200"></span>
             </button>
           </li>
-          <li>
+          <li className="relative group">
             <button
               onClick={() => scrollToSection('trabajos')}
-              className="text-white bg-transparent border-none cursor-pointer"
+              className="text-white bg-transparent border-none cursor-pointer hover:text-blue-400 focus:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-gray-800 rounded-sm p-2 transition-colors duration-200"
+              aria-label="Ir a sección Trabajos"
             >
               Trabajos
+              <span className="absolute inset-x-0 -bottom-1 h-0.5 bg-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200"></span>
             </button>
           </li>
-          <li>
+          <li className="relative group">
             <button
               onClick={() => scrollToSection('proyectos')}
-              className="text-white bg-transparent border-none cursor-pointer"
+              className="text-white bg-transparent border-none cursor-pointer hover:text-blue-400 focus:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-gray-800 rounded-sm p-2 transition-colors duration-200"
+              aria-label="Ir a sección Proyectos"
             >
               Proyectos
+              <span className="absolute inset-x-0 -bottom-1 h-0.5 bg-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200"></span>
             </button>
           </li>
         </ul>

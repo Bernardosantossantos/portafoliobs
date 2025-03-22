@@ -109,13 +109,16 @@ function Home() {
       {/* Sobre mi */}
       <section id="sobre-mi" className="py-24 px-4 bg-gray-100">
         <div className="container mx-auto px-4 max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          {/* Texto (izquierda) */}
+        
           <div>
             <h2 className="text-3xl font-bold text-gray-800 mb-4">
               Sobre Mí
             </h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Me llamo Bernardo Aneudy Santos Santos, aunque la mayoría me conoce como Aneudy o Neo. Me inicié en la programación durante mis años universitarios, cuando desarrollé un módulo de facturación en C# Windows Forms. A pesar de que algunos compañeros dudaron inicialmente de mis capacidades, con el tiempo demostré lo contrario. He contribuido y liderado proyectos que han tenido un impacto significativo en la población dominicana. Creo firmemente en el poder de la tecnología para transformar vidas y me dedico a impulsar cambios positivos a través del desarrollo de software.
+              Mi nombre es Bernardo Aneudy Santos Santos, aunque mis amigos me llaman Aneudy o, en ocasiones, Neo. Di mis primeros pasos en programación en la universidad, creando un sistema de facturación en C# Windows Forms.
+            </p>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Hoy en día, he tenido la oportunidad de contribuir y liderar proyectos que han tenido un impacto significativo en la población dominicana.
             </p>
             <p className="text-gray-700 leading-relaxed mb-6">
               En mi tiempo libre disfruto explorar temas de Inteligencia Artificial, cloud computing, desarrollar proyectos personales y escribir artículos técnicos en mi LinkedIn y blog.
@@ -148,7 +151,7 @@ function Home() {
 
       <section id='Habilidades & Tecnologías' className="py-24 bg-white">
         <div className="max-w-6xl container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-800 mb-10 text-center">
+          <h2 className="text-3xl font-bold text-gray-800 mb-10 ">
             Habilidades & Tecnologías
           </h2>
 
@@ -224,7 +227,7 @@ function Home() {
 
       <section id='proyectos' className="py-24 px-4 bg-white">
         <div className="max-w-6xl container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-800 mb-16 text-center">Mis Proyectos Personales</h2>
+          <h2 className="text-3xl font-bold text-gray-800 mb-16 ">Mis Proyectos Personales</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             {/* Proyecto 1 */}
             <div className="border rounded-lg overflow-hidden shadow-lg">
