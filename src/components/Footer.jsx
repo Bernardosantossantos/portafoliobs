@@ -3,7 +3,7 @@ import { FaLinkedin, FaGithub } from 'react-icons/fa';
 function Footer() {
   return (
     <footer className="bg-gray-800 text-white py-4">
-      <div className="container mx-auto px-4">
+      <div className="max-w-6xl container mx-auto px-4">
         <div className="flex justify-between items-center flex-wrap gap-4">
           {/* Copyright */}
           <p className="text-gray-400">

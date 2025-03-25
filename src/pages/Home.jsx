@@ -22,6 +22,7 @@ import { Link } from 'react-router-dom';
 
 import "slick-carousel/slick/slick-theme.css";
 import Trabajos from '../components/Trabajos';  // Asegúrate de usar la ruta correcta
+import ConstructionModal from '../components/ConstructionModal';
 // Home.jsx
 function Home() {
   const sliderSettings = {
@@ -95,12 +96,13 @@ function Home() {
               >
                 Contáctame
               </a>
+              {/*
               <a
                 href="#proyectos"
                 className="bg-transparent border border-blue-600 hover:bg-blue-600 hover:text-white text-blue-600 font-semibold py-2 px-4 rounded transition-colors"
               >
                 Ver proyectos
-              </a>
+              </a>*/}
             </div>
           </div>
         </div>
@@ -222,14 +224,16 @@ function Home() {
         </div>
       </section>
 
+      <ConstructionModal />
+
       {/* Trabajos */}
       <Trabajos />
-
+ {/*
       <section id='proyectos' className="py-24 px-4 bg-white">
         <div className="max-w-6xl container mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-800 mb-16 ">Mis Proyectos Personales</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-            {/* Proyecto 1 */}
+            {/* Proyecto 1 
             <div className="border rounded-lg overflow-hidden shadow-lg">
               <img
                 src="/src/assets/project1.jpg" // Reemplaza con la ruta de la imagen de tu proyecto
@@ -243,7 +247,7 @@ function Home() {
                 </p>
               </div>
             </div>
-            {/* Proyecto 2 */}
+            {/* Proyecto 2 
             <div className="border rounded-lg overflow-hidden shadow-lg">
               <img
                 src="/src/assets/project2.jpg" // Reemplaza con la ruta de la imagen de tu proyecto
@@ -257,7 +261,7 @@ function Home() {
                 </p>
               </div>
             </div>
-            {/* Proyecto 3 */}
+            {/* Proyecto 3 
             <div className="border rounded-lg overflow-hidden shadow-lg">
               <img
                 src="/src/assets/project3.jpg" // Reemplaza con la ruta de la imagen de tu proyecto
@@ -271,10 +275,10 @@ function Home() {
                 </p>
               </div>
             </div>
-            {/* Agrega más tarjetas de proyecto según lo requieras */}
+            {/* Agrega más tarjetas de proyecto según lo requieras 
           </div>
         </div>
-      </section>
+      </section>*/}
     </>
   );
 }

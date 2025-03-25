@@ -32,7 +32,7 @@ function Navbar() {
         : 'bg-gray-800'
       } transition-all duration-300 z-50`}
     >
-      <nav className="container mx-auto px-4 flex flex-col sm:flex-row justify-between items-center py-4">
+      <nav className="max-w-6xl container mx-auto px-4 flex flex-col sm:flex-row justify-between items-center py-4">
         <div className="flex flex-col items-center sm:flex-row sm:space-x-4">
           <span>
             <button
@@ -76,6 +76,7 @@ function Navbar() {
             </button>
           </li>
           <li className="relative group">
+            {/*
             <button
               onClick={() => scrollToSection('proyectos')}
               className="text-white bg-transparent border-none cursor-pointer hover:text-blue-400 focus:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-gray-800 rounded-sm p-2 transition-colors duration-200"
@@ -84,6 +85,7 @@ function Navbar() {
               Proyectos
               <span className="absolute inset-x-0 -bottom-1 h-0.5 bg-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200"></span>
             </button>
+            */}
           </li>
         </ul>
       </nav>
