@@ -1,4 +1,9 @@
 @import "tailwindcss";
+@import '@fontsource/poppins/300.css';
+@import '@fontsource/poppins/400.css';
+@import '@fontsource/poppins/500.css';
+@import '@fontsource/poppins/600.css';
+@import '@fontsource/poppins/700.css';
 
 /* Estilos personalizados para el carrusel */
 .slick-track {
@@ -34,6 +39,7 @@ html {
 body {
   padding-top: 0;
   transition: padding-top 0.3s;
+  font-family: 'Poppins', sans-serif;
 }
 
 body.navbar-fixed {

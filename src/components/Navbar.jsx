@@ -26,11 +26,15 @@ function Navbar() {
   };
 
   return (
-    <header className={`${
-      isScrolled 
-        ? 'fixed top-0 left-0 right-0 bg-gray-800/95 backdrop-blur-sm shadow-lg' 
-        : 'bg-gray-800'
-      } transition-all duration-300 z-50`}
+    <header 
+      className={`
+        fixed top-0 left-0 right-0 
+        ${isScrolled 
+          ? 'bg-gray-800/95 backdrop-blur-sm shadow-lg translate-y-0' 
+          : 'bg-gray-800 translate-y-0'
+        }
+        transition-all duration-300 ease-in-out z-50
+      `}
     >
       <nav className="max-w-6xl container mx-auto px-4 flex flex-col sm:flex-row justify-between items-center py-4">
         <div className="flex flex-col items-center sm:flex-row sm:space-x-4">

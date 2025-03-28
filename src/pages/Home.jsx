@@ -58,7 +58,7 @@ function Home() {
   return (
     <>
       {/* HERO SECTION */}
-      <section id='hero' className=" bg-gradient-to-br from-gray-900 via-gray-800 to-blue-900">
+      <section id='hero' className="bg-gradient-to-br from-gray-900 via-gray-800 to-blue-900">
         <div className='container mx-auto px-4 min-h-screen py-2 flex flex-col md:flex-row items-center justify-center "'>
 
           {/* Imagen a la izquierda */}
@@ -66,7 +66,7 @@ function Home() {
             <img
               src="/src/assets/bernardo-santos.png"  // Reemplaza con la ruta de tu imagen
               alt="Foto de Bernardo"
-              className="w-64 h-64 object-cover rounded-full shadow-lg"
+              className="w-64 h-64 sm:w-80 sm:h-80 object-cover rounded-full shadow-lg"
             />
           </div>
 
