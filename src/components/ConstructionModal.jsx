@@ -20,7 +20,7 @@ function ConstructionModal() {
         <FaHardHat className="text-yellow-400 text-xl mr-3 animate-bounce" />
         <div>
           <p className="text-sm text-yellow-700">
-            ¡Sitio en construcción! Estamos mejorando tu experiencia.
+            ¡Sitio en construcción!
           </p>
         </div>
       </div>
