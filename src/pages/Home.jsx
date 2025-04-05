@@ -58,8 +58,8 @@ function Home() {
   return (
     <>
       {/* HERO SECTION */}
-      <section id='hero' className="bg-gradient-to-br from-gray-900 via-gray-800 to-blue-900">
-        <div className='container mx-auto px-4 min-h-screen py-2 flex flex-col md:flex-row items-center justify-center "'>
+      <section id='hero' className="bg-gradient-to-br from-gray-900 via-gray-800 to-blue-900 pt-16 sm:pt-0">
+      <div className='container mx-auto px-4 min-h-screen py-2 flex flex-col md:flex-row items-center justify-center'>
 
           {/* Imagen a la izquierda */}
           <div className="md:w-1/2 flex justify-center m-2 md:mb-0">
