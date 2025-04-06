@@ -44,7 +44,7 @@ function Trabajos() {
 
   return (
     <section id='trabajos' className="py-24 px-4 bg-gray-900 text-white">
-      <div className="max-w-6xl container mx-auto px-4">
+      <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-8">
           Trabajos
         </h2>

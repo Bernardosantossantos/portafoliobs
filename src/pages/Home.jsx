@@ -59,8 +59,8 @@ function Home() {
       </section>
 
       {/* Sobre mi */}
-      <section id="sobre-mi" className="py-24 px-4 bg-gray-100">
-        <div className="container mx-auto px-4 max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <section id="sobre-mi" className="w-full py-24 px-4 bg-gray-100">
+        <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
 
           <div>
             <h2 className="text-3xl font-bold text-gray-800 mb-4">
