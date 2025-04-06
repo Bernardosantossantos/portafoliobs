@@ -1,65 +1,15 @@
-// Asegúrate de tener instalados React Icons: npm install react-icons
-import { FaReact } from 'react-icons/fa';
-import {
-  SiJavascript,
-  SiNodedotjs,
-  SiTypescript,
-  SiTailwindcss,
-  SiBootstrap,
-  SiHtml5,
-  SiCss3,
-  SiSass,
-  SiNextdotjs,
-  SiAstro,
-  SiVuedotjs,
-  SiWordpress,
-  SiJoomla,
-  SiDotnet
-} from 'react-icons/si';
-import Slider from 'react-slick';
-import "slick-carousel/slick/slick.css";
-import { Link } from 'react-router-dom';
-
 import "slick-carousel/slick/slick-theme.css";
-import Trabajos from '../components/Trabajos';  // Asegúrate de usar la ruta correcta
+import Trabajos from '../components/Trabajos';
 import ConstructionModal from '../components/ConstructionModal';
+import HabilidadesyTecnologias from '../components/HabilidadesyTecnologias';
+
 // Home.jsx
 function Home() {
-  const sliderSettings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 6, // Aumentado para mostrar más elementos
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 4,
-        }
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 3,
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 2,
-        }
-      }
-    ]
-  };
-
   return (
     <>
       {/* HERO SECTION */}
       <section id='hero' className="bg-gradient-to-br from-gray-900 via-gray-800 to-blue-900 pt-16 sm:pt-0">
-      <div className='container mx-auto px-4 min-h-screen py-2 flex flex-col md:flex-row items-center justify-center'>
+        <div className='container mx-auto px-4 min-h-screen py-2 flex flex-col md:flex-row items-center justify-center'>
 
           {/* Imagen a la izquierda */}
           <div className="md:w-1/2 flex justify-center m-2 md:mb-0">
@@ -111,7 +61,7 @@ function Home() {
       {/* Sobre mi */}
       <section id="sobre-mi" className="py-24 px-4 bg-gray-100">
         <div className="container mx-auto px-4 max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        
+
           <div>
             <h2 className="text-3xl font-bold text-gray-800 mb-4">
               Sobre Mí
@@ -151,134 +101,12 @@ function Home() {
         </div>
       </section>
 
-      <section id='Habilidades & Tecnologías' className="py-24 bg-white">
-        <div className="max-w-6xl container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-800 mb-10 ">
-            Habilidades & Tecnologías
-          </h2>
-
-          <div className="mb-12">
-            <Slider {...sliderSettings}>
-              <div className="flex flex-col items-center space-y-2 px-2">
-                <FaReact className="text-blue-500 text-5xl" />
-                <p className="text-lg font-medium">React</p>
-              </div>
-              <div className="flex flex-col items-center space-y-2 px-2">
-                <SiJavascript className="text-yellow-500 text-5xl" />
-                <p className="text-lg font-medium">JavaScript</p>
-              </div>
-              <div className="flex flex-col items-center space-y-2 px-2">
-                <SiTypescript className="text-blue-600 text-5xl" />
-                <p className="text-lg font-medium">TypeScript</p>
-              </div>
-              <div className="flex flex-col items-center space-y-2 px-2">
-                <SiHtml5 className="text-orange-500 text-5xl" />
-                <p className="text-lg font-medium">HTML5</p>
-              </div>
-              <div className="flex flex-col items-center space-y-2 px-2">
-                <SiCss3 className="text-blue-500 text-5xl" />
-                <p className="text-lg font-medium">CSS3</p>
-              </div>
-              <div className="flex flex-col items-center space-y-2 px-2">
-                <SiSass className="text-pink-500 text-5xl" />
-                <p className="text-lg font-medium">Sass</p>
-              </div>
-              <div className="flex flex-col items-center space-y-2 px-2">
-                <SiTailwindcss className="text-teal-500 text-5xl" />
-                <p className="text-lg font-medium">Tailwind CSS</p>
-              </div>
-              <div className="flex flex-col items-center space-y-2 px-2">
-                <SiBootstrap className="text-purple-500 text-5xl" />
-                <p className="text-lg font-medium">Bootstrap</p>
-              </div>
-              <div className="flex flex-col items-center space-y-2 px-2">
-                <SiNextdotjs className="text-black text-5xl" />
-                <p className="text-lg font-medium">Next.js</p>
-              </div>
-              <div className="flex flex-col items-center space-y-2 px-2">
-                <SiAstro className="text-purple-500 text-5xl" />
-                <p className="text-lg font-medium">Astro</p>
-              </div>
-              <div className="flex flex-col items-center space-y-2 px-2">
-                <SiVuedotjs className="text-green-600 text-5xl" />
-                <p className="text-lg font-medium">Vue</p>
-              </div>
-              <div className="flex flex-col items-center space-y-2 px-2">
-                <SiNodedotjs className="text-green-500 text-5xl" />
-                <p className="text-lg font-medium">Node.js</p>
-              </div>
-              <div className="flex flex-col items-center space-y-2 px-2">
-                <SiDotnet className="text-purple-700 text-5xl" />
-                <p className="text-lg font-medium">.NET</p>
-              </div>
-              <div className="flex flex-col items-center space-y-2 px-2">
-                <SiWordpress className="text-blue-700 text-5xl" />
-                <p className="text-lg font-medium">WordPress</p>
-              </div>
-              <div className="flex flex-col items-center space-y-2 px-2">
-                <SiJoomla className="text-red-600 text-5xl" />
-                <p className="text-lg font-medium">Joomla</p>
-              </div>
-            </Slider>
-          </div>
-        </div>
-      </section>
-
-      <ConstructionModal />
-
+      {/*Habilidades y Tecnologias*/}
+      <HabilidadesyTecnologias />
       {/* Trabajos */}
       <Trabajos />
- {/*
-      <section id='proyectos' className="py-24 px-4 bg-white">
-        <div className="max-w-6xl container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-800 mb-16 ">Mis Proyectos Personales</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-            {/* Proyecto 1 
-            <div className="border rounded-lg overflow-hidden shadow-lg">
-              <img
-                src="/src/assets/project1.jpg" // Reemplaza con la ruta de la imagen de tu proyecto
-                alt="Proyecto 1"
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-4">
-                <h3 className="text-xl font-semibold mb-2">Proyecto 1</h3>
-                <p className="text-gray-600">
-                  Descripción breve del proyecto.
-                </p>
-              </div>
-            </div>
-            {/* Proyecto 2 
-            <div className="border rounded-lg overflow-hidden shadow-lg">
-              <img
-                src="/src/assets/project2.jpg" // Reemplaza con la ruta de la imagen de tu proyecto
-                alt="Proyecto 2"
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-4">
-                <h3 className="text-xl font-semibold mb-2">Proyecto 2</h3>
-                <p className="text-gray-600">
-                  Descripción breve del proyecto.
-                </p>
-              </div>
-            </div>
-            {/* Proyecto 3 
-            <div className="border rounded-lg overflow-hidden shadow-lg">
-              <img
-                src="/src/assets/project3.jpg" // Reemplaza con la ruta de la imagen de tu proyecto
-                alt="Proyecto 3"
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-4">
-                <h3 className="text-xl font-semibold mb-2">Proyecto 3</h3>
-                <p className="text-gray-600">
-                  Descripción breve del proyecto.
-                </p>
-              </div>
-            </div>
-            {/* Agrega más tarjetas de proyecto según lo requieras 
-          </div>
-        </div>
-      </section>*/}
+
+      <ConstructionModal />
     </>
   );
 }

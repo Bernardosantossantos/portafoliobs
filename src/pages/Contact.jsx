@@ -1,11 +1,13 @@
-// Home.jsx
-function Home() {
+import ConstructionModalCompleto from '../components/ConstrucionModalCompleto';
+import ConstructionModal from '../components/ConstructionModal';
+
+function Contact() {
     return (
-      <section>
-        <h1>Home Page</h1>
-        <p>Bienvenido a mi Portafolio</p>
-      </section>
+        <>
+          <ConstructionModalCompleto />
+          {/* ...existing code... */}
+        </>
     );
   }
-  export default Home;
+  export default Contact;
   
