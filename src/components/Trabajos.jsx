@@ -46,7 +46,7 @@ function Trabajos() {
     <section id='trabajos' className="w-full bg-gray-900 text-white py-24">
       {/* Contenedor principal */}
       <div className="w-full max-w-7xl mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-8">
+        <h2 className="text-3xl font-bold mb-8 pt-14">
           Trabajos
         </h2>
 

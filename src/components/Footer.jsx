@@ -12,9 +12,6 @@ function Footer() {
 
           {/* Social Media Links */}
           <div className="flex items-center space-x-6">
-          <p className="text-gray-400">
-            Sigueme
-          </p>
             <a
               href="https://www.linkedin.com/in/bernardosantossa/"
               target="_blank"
