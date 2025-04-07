@@ -8,8 +8,8 @@ function Home() {
   return (
     <>
       {/* HERO SECTION */}
-      <section id='hero' className="bg-gradient-to-br from-gray-900 via-gray-800 to-blue-900 pt-16 sm:pt-0">
-        <div className='container mx-auto px-4 min-h-screen py-2 flex flex-col md:flex-row items-center justify-center'>
+      <section id='hero' className="w-full bg-gradient-to-br from-gray-900 via-gray-800 to-blue-900 pt-16 sm:pt-0">
+        <div className='w-full max-w-7xl mx-auto px-4 min-h-screen py-2 flex flex-col md:flex-row items-center justify-center'>
 
           {/* Imagen a la izquierda */}
           <div className="md:w-1/2 flex justify-center m-2 md:mb-0">
@@ -59,8 +59,8 @@ function Home() {
       </section>
 
       {/* Sobre mi */}
-      <section id="sobre-mi" className="w-full py-24 px-4 bg-gray-100">
-        <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <section id="sobre-mi" className="w-full py-24 bg-gray-100">
+        <div className="w-full max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
 
           <div>
             <h2 className="text-3xl font-bold text-gray-800 mb-4">
@@ -101,10 +101,17 @@ function Home() {
         </div>
       </section>
 
-      {/*Habilidades y Tecnologias*/}
-      <HabilidadesyTecnologias />
+      {/* Habilidades y Tecnologias */}
+      <section className="w-full">
+        <div className="w-full max-w-7xl mx-auto px-4">
+          <HabilidadesyTecnologias />
+        </div>
+      </section>
+
       {/* Trabajos */}
-      <Trabajos />
+
+          <Trabajos />
+
 
       <ConstructionModal />
     </>

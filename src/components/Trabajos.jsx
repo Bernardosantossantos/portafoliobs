@@ -30,7 +30,7 @@ function Trabajos() {
       tipoEtiqueta: "Contribución",
       colorEtiqueta: "bg-purple-600",
       url: "https://apps.minerd.gob.do/semonitoresdocentes/Login/IniciarSesion?ReturnUrl=%2fsemonitoresdocentes",
-      descripcion: `Colaboré en el desarrollo de la plataforma web para el concurso de oposición de monitores, actualizando la interfaz de registro de usuarios y validando documentos. También supervisé los cambios de otros desarrolladores tanto de código como de base de datos y documenté las modificaciones realizadas. Además, coordiné con los equipos de seguridad y base de datos para la puesta en producción de dichas actualizaciones. Asimismo, validé los ajustes solicitados por el cliente y realicé pruebas de funcionalidad e integración.`
+      descripcion: `Colaboré en el desarrollo de la plataforma web para el concurso de oposición de monitores, actualizando la interfaz de registro de usuarios y validación de documentos. También supervisé los cambios de otros desarrolladores tanto de código como de base de datos y documenté las modificaciones realizadas. Además, coordiné con los equipos de seguridad y base de datos para la puesta en producción de dichas actualizaciones. Asimismo, validé los ajustes solicitados por el cliente y realicé pruebas de funcionalidad e integración.`
     },
     {
       titulo: "Data Center del Estado Dominicano (OGTIC)",
@@ -43,8 +43,9 @@ function Trabajos() {
   ];
 
   return (
-    <section id='trabajos' className="py-24 px-4 bg-gray-900 text-white">
-      <div className="container mx-auto px-4">
+    <section id='trabajos' className="w-full bg-gray-900 text-white py-24">
+      {/* Contenedor principal */}
+      <div className="w-full max-w-7xl mx-auto px-4">
         <h2 className="text-3xl font-bold mb-8">
           Trabajos
         </h2>

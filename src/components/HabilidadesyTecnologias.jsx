@@ -86,8 +86,8 @@ function HabilidadesyTecnologias() {
     ];
 
     return (
-        <section id="Habilidades & Tecnologías" className="py-24 bg-white">
-            <div className="container mx-auto px-4">
+        <section id="Habilidades & Tecnologías" className="py-24 bg-white w-full">
+            <div className="container mx-auto px-4 w-full">
                 <h2 className="text-3xl font-bold text-gray-800 mb-10">
                     Habilidades & Tecnologías
                 </h2>
