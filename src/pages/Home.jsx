@@ -14,7 +14,7 @@ function Home() {
           {/* Imagen a la izquierda */}
           <div className="md:w-1/2 flex justify-center m-2 md:mb-0">
             <img
-              src="/src/assets/bernardo-santos.png"  // Reemplaza con la ruta de tu imagen
+              src="/assets/bernardo-santos.png" 
               alt="Foto de Bernardo"
               className="w-64 h-64 sm:w-80 sm:h-80 object-cover rounded-full shadow-lg"
             />
@@ -82,7 +82,7 @@ function Home() {
 
             {/* Botón de descarga CV */}
             <a
-              href="/src/assets/cv-bernardo-santos.pdf" // Asegúrate de colocar la ruta correcta de tu CV
+              href="/assets/cv-bernardo-santos.pdf" 
               download="CV-Bernardo-Santos.pdf"
               className="inline-blockbg-transparent border border-blue-600 hover:bg-blue-600 hover:text-white text-blue-600 font-semibold py-2 px-4 rounded shadow transition-colors"
             >
@@ -93,7 +93,7 @@ function Home() {
           {/* Imagen (derecha) */}
           <div className="flex justify-center md:justify-end">
             <img
-              src="/src/assets/bernardo-santos.png"
+              src="/assets/bernardo-santos.png"
               alt="Bernardo trabajando en un proyecto"
               className="rounded-lg shadow-lg w-full md:w-96"
             />
