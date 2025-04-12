@@ -65,7 +65,7 @@ function Navbar() {
               className="text-white bg-transparent border-none cursor-pointer hover:text-blue-400 focus:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-gray-800 rounded-sm p-2 transition-colors duration-200"
               aria-label="Ir a sección Habilidades"
             >
-              Habilidades
+              Tecnologías
               <span className="absolute inset-x-0 -bottom-1 h-0.5 bg-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200"></span>
             </button>
           </li>

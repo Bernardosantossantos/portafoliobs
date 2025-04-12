@@ -8,7 +8,7 @@ function Home() {
   return (
     <>
       {/* HERO SECTION */}
-      <section id='hero' className="w-full bg-gradient-to-br from-gray-900 via-gray-800 to-blue-900 pt-16 sm:pt-0">
+      <section id='hero' className="w-full bg-gradient-to-br from-gray-900 via-gray-800 to-blue-900 pt-8 sm:pt-0">
         <div className='w-full max-w-7xl mx-auto px-4 min-h-screen py-2 flex flex-col md:flex-row items-center justify-center'>
 
           {/* Imagen a la izquierda */}
