@@ -36,7 +36,7 @@ function Navbar() {
         transition-all duration-300 ease-in-out z-50
       `}
     >
-      <nav className="container mx-auto px-4 flex flex-col sm:flex-row justify-between items-center py-2">
+      <nav className="w-full max-w-7xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center py-2">
         <div className="flex flex-col items-center sm:flex-row sm:space-x-4">
           <span>
             <button
